@@ -1,0 +1,212 @@
+{
+  "Metadata": {
+    "title": "Doddapaneni Group - Construyendo Negocios en Todas las Industrias",
+    "description": "Doddapaneni Group es un conglomerado empresarial diversificado que ofrece soluciones innovadoras y escalables en tecnología, atención médica, construcción y más."
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "contact": "Contáctenos",
+    "language": "Idioma"
+  },
+  "Footer": {
+    "tagline": "Construyendo Negocios en Todas las Industrias",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "email": "Correo Electrónico"
+  },
+  "Home": {
+    "innovating": "Innovando en Todas las Industrias",
+    "heroTitle": "Construyendo Negocios <highlight>Listos para el Futuro</highlight>",
+    "heroSubtitle": "Construyendo negocios en todas las industrias. Entregando soluciones innovadoras, escalables y sostenibles para un mundo complejo.",
+    "exploreServices": "Explorar Servicios",
+    "learnAboutUs": "Conócenos",
+    "globalReach": "Alcance Global",
+    "globalReachDesc": "Operando en múltiples continentes con una cartera diversa de empresas exitosas.",
+    "sustainableGrowth": "Crecimiento Sostenible",
+    "sustainableGrowthDesc": "Centrándose en la creación de valor a largo plazo a través de prácticas comerciales éticas y escalables.",
+    "trustedPartner": "Socio de Confianza",
+    "trustedPartnerDesc": "Construyendo relaciones duraderas basadas en la integridad, la transparencia y la excelencia operativa.",
+    "whoWeAre": "Quiénes Somos",
+    "buildingSustainable": "Construyendo Negocios Sostenibles",
+    "description": "Doddapaneni Group es un conglomerado empresarial diversificado que ofrece soluciones innovadoras, escalables y listas para el futuro en múltiples industrias. Nuestra presencia abarca tecnología, atención médica, construcción, comercio global, logística, manufactura, educación, medios y soluciones de fuerza laboral. Nos enfocamos en construir negocios sostenibles que creen valor a largo plazo para clientes, socios y comunidades. Con una base sólida arraigada en la integridad, la excelencia operativa y la innovación, Doddapaneni Group permite a las organizaciones adaptarse, escalar y liderar en mercados competitivos. Nuestro modelo de negocio integrado nos permite ofrecer soluciones integrales bajo un grupo de confianza.",
+    "readStory": "Lee nuestra historia completa",
+    "ourGroupCompanies": "Nuestras Empresas del Grupo",
+    "drivingExcellence": "Impulsando la excelencia en sectores clave.",
+    "ourServices": "Nuestros Servicios",
+    "diverseSolutions": "Soluciones diversas adaptadas a un mundo complejo y en evolución.",
+    "viewAllServices": "Ver todos los servicios",
+    "learnMore": "Aprende más",
+    "readyToTransform": "¿Listo para transformar tu negocio?",
+    "partnerWithUs": "Asóciate con Doddapaneni Group para soluciones innovadoras y crecimiento sostenible.",
+    "getInTouch": "Ponte en Contacto",
+    "servicesList": {
+      "ecommerce": {
+        "title": "Comercio Electrónico y Mercados",
+        "description": "Diseñamos, desarrollamos y gestionamos ecosistemas de comercio electrónico escalables que respaldan modelos comerciales modernos."
+      },
+      "software": {
+        "title": "Software, TI y Tecnologías de IA",
+        "description": "Brindamos soluciones digitales integrales que incluyen desarrollo de aplicaciones web y móviles, automatización impulsada por IA, chatbots, servicios en la nube, plataformas SaaS y consultoría de TI."
+      },
+      "digitalMarketing": {
+        "title": "Servicios de Marketing Digital",
+        "description": "Nuestros servicios de marketing digital se centran en crear visibilidad de marca e impulsar un crecimiento medible."
+      },
+      "healthcare": {
+        "title": "Atención Médica, Suministros Médicos y Facturación Médica",
+        "description": "Apoyamos a los proveedores de atención médica con el comercio de equipos médicos y servicios de backend integrales."
+      },
+      "construction": {
+        "title": "Construcción, Arquitectura y Bienes Raíces",
+        "description": "Ofrecemos soluciones de construcción y bienes raíces que cubren la construcción de edificios, el diseño arquitectónico, el desarrollo inmobiliario y la consultoría inmobiliaria."
+      },
+      "importExport": {
+        "title": "Importación y Exportación (Todos los Productos)",
+        "description": "Facilitamos el comercio internacional a través del abastecimiento global, las exportaciones mayoristas, el comercio internacional y la logística transfronteriza."
+      },
+      "food": {
+        "title": "Procesamiento de Alimentos y Bebidas",
+        "description": "Nuestra división de procesamiento de alimentos y bebidas se centra en la producción de alimentos envasados, la fabricación de bebidas y la distribución eficiente de la cadena de suministro de alimentos."
+      },
+      "education": {
+        "title": "Educación y Desarrollo de Habilidades",
+        "description": "Ofrecemos programas de capacitación, cursos vocacionales, plataformas de aprendizaje electrónico y programas de certificación diseñados para desarrollar habilidades relevantes para la industria y profesionales listos para la carrera."
+      },
+      "logistics": {
+        "title": "Logística y Almacenamiento",
+        "description": "Ofrecemos soluciones logísticas integrales que incluyen manejo de carga y fletes, almacenamiento y almacenamiento, gestión de la cadena de suministro y servicios de entrega de última milla."
+      },
+      "media": {
+        "title": "Medios, Noticias y Entretenimiento",
+        "description": "Nuestra división de medios gestiona portales de noticias digitales, producción de medios, creación de videos y contenido y gestión de redes publicitarias."
+      },
+      "manufacturing": {
+        "title": "Manufactura y Comercio Mayorista",
+        "description": "Operamos unidades de fabricación industrial, instalaciones de producción personalizadas y operaciones comerciales mayoristas a granel para respaldar diversas necesidades de la industria."
+      },
+      "staffing": {
+        "title": "Consultoría de Empleados y Servicios de Dotación de Personal",
+        "description": "Ayudamos a las organizaciones con el reclutamiento y la dotación de personal, la consultoría de recursos humanos y la gestión de la fuerza laboral."
+      }
+    }
+  },
+  "About": {
+    "headerTitle": "Sobre Nosotros",
+    "headerSubtitle": "Una empresa multidominio comprometida con la excelencia en diversas industrias.",
+    "introTitle": "Nuestra Historia",
+    "introText": "Doddapaneni Group es una empresa multidominio comprometida con la excelencia en diversas industrias. Operamos con una visión clara para construir negocios centrados en el futuro que combinan tecnología, estrategia y ejecución. Nuestra experiencia abarca tecnologías de TI e IA, soluciones de atención médica, construcción y bienes raíces, importación y exportación, manufactura, logística, educación, medios y servicios de personal profesional. Nuestra fortaleza radica en nuestra capacidad para comprender las necesidades del mercado y ofrecer soluciones personalizadas que impulsan la eficiencia, el crecimiento y la sostenibilidad. Al aprovechar la innovación, los profesionales calificados y las asociaciones sólidas, ayudamos a las empresas a navegar la complejidad y lograr resultados medibles.",
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Convertirse en un grupo empresarial respetado a nivel mundial reconocido por la innovación, la confiabilidad y el liderazgo interindustrial.",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Entregar soluciones escalables y de alta calidad en todas las industrias mientras fomentamos asociaciones a largo plazo, adoptamos la innovación y mantenemos prácticas comerciales éticas.",
+    "companiesTitle": "Nuestras Empresas del Grupo",
+    "companiesSubtitle": "Un ecosistema unificado de negocios especializados.",
+    "valuesTitle": "Valores Fundamentales",
+    "valuesSubtitle": "Los principios que guían cada una de nuestras acciones y decisiones.",
+    "valuesList": {
+      "integrity": "Integridad",
+      "transparency": "Transparencia",
+      "customerFocus": "Enfoque al Cliente",
+      "innovation": "Innovación",
+      "operationalExcellence": "Excelencia Operativa",
+      "sustainableGrowth": "Crecimiento Sostenible"
+    },
+    "industries": {
+      "it": "TI e IA",
+      "construction": "Construcción",
+      "importExport": "Importación/Exportación",
+      "healthcare": "Atención Médica",
+      "logistics": "Logística",
+      "manufacturing": "Manufactura"
+    }
+  },
+  "ServicesPage": {
+    "title": "Nuestros Servicios",
+    "description": "Soluciones integrales adaptadas para satisfacer las necesidades cambiantes de las empresas modernas. Entregamos excelencia en todas las industrias."
+  },
+  "ContactPage": {
+    "headerTitle": "Contáctenos",
+    "headerSubtitle": "Póngase en contacto con nuestro equipo para discutir cómo podemos ayudar a que su negocio crezca.",
+    "getInTouch": "Ponte en Contacto",
+    "emailTitle": "Correo Electrónico",
+    "emailAddress": "",
+    "emailResponse": "Responderemos dentro de las 24 horas.",
+    "phoneTitle": "Teléfono",
+    "phoneAvailability": "Lun-Vie de 9am a 6pm.",
+    "locationsTitle": "Ubicaciones",
+    "locationIndia": "India (Principal)",
+    "addressIndia": "Plot No 22,23,41,42 & 43, Sri Krishna Avenue, Venkataramana Colony, Gokul Plots, Vasanth Nagar, Ranga Reddy District, 500085",
+    "locationUSA": "USA",
+    "addressUSA": "5052 SW 40th PL, Ocala, Florida, 34474",
+    "formTitle": "Envíenos un Mensaje",
+    "successTitle": "¡Mensaje Enviado!",
+    "successMessage": "Gracias por contactarnos. Estaremos en contacto pronto.",
+    "formName": "Nombre Completo",
+    "formNamePlaceholder": "Ingrese su nombre",
+    "formEmail": "Dirección de Correo Electrónico",
+    "formEmailPlaceholder": "Ingrese su correo electrónico",
+    "formMessage": "Mensaje",
+    "formMessagePlaceholder": "¿Cómo podemos ayudarte?",
+    "sendButton": "Enviar Mensaje",
+    "sendingButton": "Enviando...",
+    "nameRequired": "El nombre es obligatorio",
+    "emailRequired": "El correo electrónico es obligatorio",
+    "emailInvalid": "Por favor, introduce una dirección de correo electrónico válida",
+    "messageRequired": "El mensaje es obligatorio",
+    "messageMinLength": "El mensaje debe tener al menos 10 caracteres"
+  },
+  "Dlsin": {
+    "partOf": "Parte de Doddapaneni Group",
+    "subtitle": "Una plataforma de comercio electrónico de múltiples proveedores que conecta el mundo.",
+    "sectionTitle": "Redefiniendo el comercio global",
+    "p1": "Dlsin es un ecosistema de comercio electrónico de múltiples proveedores de vanguardia diseñado para empoderar a las empresas y deleitar a los clientes. Cerramos la brecha entre los vendedores locales y los mercados globales, ofreciendo una experiencia de compra perfecta respaldada por una tecnología robusta.",
+    "p2": "Desde el comercio minorista hasta el mayorista, Dlsin proporciona la infraestructura para que el comercio digital prospere. Nuestra plataforma admite diversas categorías, asegurando que los productos de calidad lleguen a los clientes de manera eficiente, sin importar dónde se encuentren.",
+    "features": {
+      "globalMarketplace": { "title": "Mercado Global", "description": "Conectando compradores y vendedores de todo el mundo en una plataforma única y unificada." },
+      "securePayments": { "title": "Pagos Seguros", "description": "Cifrado avanzado y pasarelas de pago seguras que garantizan transacciones seguras para todos los usuarios." },
+      "fastLogistics": { "title": "Logística Rápida", "description": "Red logística integrada para entregas puntuales a través de las fronteras." },
+      "vendorTools": { "title": "Herramientas para Vendedores", "description": "Panel completo y análisis para que los vendedores gestionen y hagan crecer su negocio." }
+    }
+  },
+  "JanathaMirror": {
+    "partOf": "Parte de Doddapaneni Group",
+    "subtitle": "Verdad, perspectiva y el poder de la información.",
+    "sectionTitle": "La Voz del Pueblo",
+    "p1": "Janatha Mirror es una empresa de medios dinámica comprometida con la integridad periodística y la conciencia pública. En una era de sobrecarga de información, nos esforzamos por brindar claridad, profundidad y contexto a las historias que más importan.",
+    "p2": "Cubriendo política, negocios, entretenimiento y problemas sociales, Janatha Mirror conecta a las comunidades a través de noticias confiables y contenido atractivo. Nuestro enfoque digital garantiza que la información sea accesible, oportuna e impactante.",
+    "features": {
+      "unbiasedReporting": { "title": "Reportajes Imparciales", "description": "Entregar los hechos tal como son, sin prejuicios ni distorsiones." },
+      "digitalFirst": { "title": "Digital Primero", "description": "Optimizado para la web moderna, dispositivos móviles y plataformas sociales." },
+      "multimediaContent": { "title": "Contenido Multimedia", "description": "Contenido de video enriquecido, entrevistas y documentales." },
+      "globalPerspective": { "title": "Perspectiva Global", "description": "Historias locales con relevancia global y cobertura internacional." }
+    }
+  },
+  "DealsMedi": {
+    "partOf": "Parte de Doddapaneni Group",
+    "subtitle": "Su destino final para ofertas exclusivas y ofertas digitales.",
+    "sectionTitle": "Compras inteligentes, ahorros más inteligentes",
+    "p1": "DealsMedi es una plataforma digital de primer nivel que conecta a los consumidores con las mejores ofertas, descuentos y promociones en varias categorías. Nos asociamos con las mejores marcas para ofrecerle ahorros exclusivos.",
+    "p2": "Desde artículos esenciales diarios hasta artículos de lujo, DealsMedi selecciona las ofertas más atractivas, asegurando que obtenga el mejor valor por su dinero.",
+    "features": {
+      "exclusiveOffers": { "title": "Ofertas Exclusivas", "description": "Acceso a ofertas solo para miembros y descuentos por tiempo limitado." },
+      "digitalCoupons": { "title": "Cupones Digitales", "description": "Ahorros instantáneos con cupones digitales fáciles de usar." },
+      "brandPartnerships": { "title": "Asociaciones de Marca", "description": "Colaboraciones con marcas líderes globales y locales." },
+      "userRewards": { "title": "Recompensas para Usuarios", "description": "Gane puntos y recompensas por cada oferta que reclame." }
+    }
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "description": "La página que está buscando podría haber sido eliminada, haber cambiado de nombre o no estar disponible temporalmente.",
+    "homeButton": "Volver al inicio"
+  },
+  "Error": {
+    "title": "¡Algo salió mal!",
+    "description": "Pedimos disculpas por las molestias. Ha ocurrido un error inesperado.",
+    "retry": "Intentar de nuevo"
+  }
+ }

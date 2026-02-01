@@ -1,0 +1,212 @@
+{
+  "Metadata": {
+    "title": "Doddapaneni Group - Building Businesses Across Industries",
+    "description": "Doddapaneni Group is a diversified business conglomerate delivering innovative, scalable solutions across technology, healthcare, construction, and more."
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact Us",
+    "language": "Language"
+  },
+  "Footer": {
+    "tagline": "Building Businesses Across Industries",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "phone": "Phone",
+    "address": "Address",
+    "email": "Email"
+  },
+  "Home": {
+    "innovating": "Innovating Across Industries",
+    "heroTitle": "Building <highlight>Future-Ready</highlight> Businesses",
+    "heroSubtitle": "Building Businesses Across Industries. Delivering innovative, scalable, and sustainable solutions for a complex world.",
+    "exploreServices": "Explore Our Services",
+    "learnAboutUs": "Learn About Us",
+    "globalReach": "Global Reach",
+    "globalReachDesc": "Operating across multiple continents with a diverse portfolio of successful ventures.",
+    "sustainableGrowth": "Sustainable Growth",
+    "sustainableGrowthDesc": "Focusing on long-term value creation through ethical and scalable business practices.",
+    "trustedPartner": "Trusted Partner",
+    "trustedPartnerDesc": "Building lasting relationships based on integrity, transparency, and operational excellence.",
+    "whoWeAre": "Who We Are",
+    "buildingSustainable": "Building Sustainable Businesses",
+    "description": "Doddapaneni Group is a diversified business conglomerate delivering innovative, scalable, and future-ready solutions across multiple industries. Our presence spans technology, healthcare, construction, global trade, logistics, manufacturing, education, media, and workforce solutions. We focus on building sustainable businesses that create long-term value for clients, partners, and communities. With a strong foundation rooted in integrity, operational excellence, and innovation, Doddapaneni Group enables organizations to adapt, scale, and lead in competitive markets. Our integrated business model allows us to deliver end-to-end solutions under one trusted group.",
+    "readStory": "Read our full story",
+    "ourGroupCompanies": "Our Group Companies",
+    "drivingExcellence": "Driving excellence across key sectors.",
+    "ourServices": "Our Services",
+    "diverseSolutions": "Diverse solutions tailored for a complex, evolving world.",
+    "viewAllServices": "View all services",
+    "learnMore": "Learn more",
+    "readyToTransform": "Ready to Transform Your Business?",
+    "partnerWithUs": "Partner with Doddapaneni Group for innovative solutions and sustainable growth.",
+    "getInTouch": "Get in Touch",
+    "servicesList": {
+      "ecommerce": {
+        "title": "E-Commerce & Marketplaces",
+        "description": "We design, develop, and manage scalable e-commerce ecosystems that support modern business models. Our solutions include online retail platforms, multi-vendor marketplaces, global trading portals, and dropshipping and wholesale systems optimized for performance and growth."
+      },
+      "software": {
+        "title": "Software, IT & AI Technologies",
+        "description": "We provide end-to-end digital solutions including web and mobile application development, AI-powered automation, chatbots, cloud services, SaaS platforms, and IT consulting. Our technology solutions are designed to enhance efficiency, security, and scalability."
+      },
+      "digitalMarketing": {
+        "title": "Digital Marketing Services",
+        "description": "Our digital marketing services focus on building brand visibility and driving measurable growth. We offer SEO and keyword optimization, social media management, branding and advertising campaigns, and lead generation through performance-driven strategies."
+      },
+      "healthcare": {
+        "title": "Healthcare, Medical Supplies & Medical Billing",
+        "description": "We support healthcare providers with medical equipment trading and comprehensive backend services. Our offerings include CPAP and BiPAP devices, medical consumables, wholesale distribution, medical billing and coding, insurance claims processing, EHR/EMR integration, telehealth billing, and complete Revenue Cycle Management solutions."
+      },
+      "construction": {
+        "title": "Construction, Architecture & Real Estate",
+        "description": "We deliver construction and real estate solutions covering building construction, architectural design, real estate development, and property consulting, ensuring quality, compliance, and timely execution."
+      },
+      "importExport": {
+        "title": "Import & Export (All Commodities)",
+        "description": "We facilitate international trade through global sourcing, wholesale exports, international trading, and cross-border logistics, enabling smooth and compliant global operations."
+      },
+      "food": {
+        "title": "Food Processing & Beverages",
+        "description": "Our food processing and beverage division focuses on packaged food production, beverage manufacturing, and efficient food supply chain distribution."
+      },
+      "education": {
+        "title": "Education & Skill Development",
+        "description": "We provide training programs, vocational courses, e-learning platforms, and certification programs designed to build industry-relevant skills and career-ready professionals."
+      },
+      "logistics": {
+        "title": "Logistics & Warehousing",
+        "description": "We offer end-to-end logistics solutions including freight and cargo handling, storage and warehousing, supply chain management, and last-mile delivery services."
+      },
+      "media": {
+        "title": "Media, News & Entertainment",
+        "description": "Our media division manages digital news portals, media production, video and content creation, and advertising network management."
+      },
+      "manufacturing": {
+        "title": "Manufacturing & Wholesale Trading",
+        "description": "We operate industrial manufacturing units, custom production facilities, and bulk wholesale trading operations to support diverse industry needs."
+      },
+      "staffing": {
+        "title": "Employee Consultancy & Staffing Services",
+        "description": "We assist organizations with recruitment and staffing, HR consulting, and workforce management, helping businesses build efficient and high-performing teams."
+      }
+    }
+  },
+  "About": {
+    "headerTitle": "About Us",
+    "headerSubtitle": "A multi-domain enterprise committed to excellence across diverse industries.",
+    "introTitle": "Our Story",
+    "introText": "Doddapaneni Group is a multi-domain enterprise committed to excellence across diverse industries. We operate with a clear vision to build future-focused businesses that combine technology, strategy, and execution. Our expertise spans IT & AI technologies, healthcare solutions, construction and real estate, import-export, manufacturing, logistics, education, media, and professional staffing services. Our strength lies in our ability to understand market needs and deliver customized solutions that drive efficiency, growth, and sustainability. By leveraging innovation, skilled professionals, and strong partnerships, we help businesses navigate complexity and achieve measurable results.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become a globally respected business group recognized for innovation, reliability, and cross-industry leadership.",
+    "missionTitle": "Our Mission",
+    "missionText": "To deliver high-quality, scalable solutions across industries while fostering long-term partnerships, embracing innovation, and maintaining ethical business practices.",
+    "companiesTitle": "Our Group of Companies",
+    "companiesSubtitle": "A unified ecosystem of specialized businesses.",
+    "valuesTitle": "Core Values",
+    "valuesSubtitle": "The principles that guide our every action and decision.",
+    "valuesList": {
+      "integrity": "Integrity",
+      "transparency": "Transparency",
+      "customerFocus": "Customer Focus",
+      "innovation": "Innovation",
+      "operationalExcellence": "Operational Excellence",
+      "sustainableGrowth": "Sustainable Growth"
+    },
+    "industries": {
+      "it": "IT & AI",
+      "construction": "Construction",
+      "importExport": "Import/Export",
+      "healthcare": "Healthcare",
+      "logistics": "Logistics",
+      "manufacturing": "Manufacturing"
+    }
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "description": "Comprehensive solutions tailored to meet the evolving needs of modern businesses. We deliver excellence across industries."
+  },
+  "ContactPage": {
+    "headerTitle": "Contact Us",
+    "headerSubtitle": "Get in touch with our team to discuss how we can help your business grow.",
+    "getInTouch": "Get In Touch",
+    "emailTitle": "Email",
+    "emailAddress": "",
+    "emailResponse": "We'll respond within 24 hours.",
+    "phoneTitle": "Phone",
+    "phoneAvailability": "Mon-Fri from 9am to 6pm.",
+    "locationsTitle": "Locations",
+    "locationIndia": "India (Main)",
+    "addressIndia": "Plot No 22,23,41,42 & 43, Sri Krishna Avenue, Venkataramana Colony, Gokul Plots, Vasanth Nagar, Ranga Reddy District, 500085",
+    "locationUSA": "USA",
+    "addressUSA": "5052 SW 40th PL, Ocala, Florida, 34474",
+    "formTitle": "Send us a Message",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for contacting us. We'll be in touch soon.",
+    "formName": "Full Name",
+    "formNamePlaceholder": "Enter Your Name",
+    "formEmail": "Email Address",
+    "formEmailPlaceholder": "Enter Your Email",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "How can we help you?",
+    "sendButton": "Send Message",
+    "sendingButton": "Sending...",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters"
+  },
+  "Dlsin": {
+    "partOf": "Part of Doddapaneni Group",
+    "subtitle": "A Multivendor E-Commerce Platform Connecting the World.",
+    "sectionTitle": "Redefining Global Trade",
+    "p1": "Dlsin is a cutting-edge multivendor e-commerce ecosystem designed to empower businesses and delight customers. We bridge the gap between local sellers and global markets, offering a seamless shopping experience backed by robust technology.",
+    "p2": "From retail to wholesale, Dlsin provides the infrastructure for digital commerce to thrive. Our platform supports diverse categories, ensuring that quality products reach customers efficiently, no matter where they are.",
+    "features": {
+      "globalMarketplace": { "title": "Global Marketplace", "description": "Connecting buyers and sellers from around the world on a single, unified platform." },
+      "securePayments": { "title": "Secure Payments", "description": "Advanced encryption and secure payment gateways ensuring safe transactions for all users." },
+      "fastLogistics": { "title": "Fast Logistics", "description": "Integrated logistics network for timely deliveries across borders." },
+      "vendorTools": { "title": "Vendor Tools", "description": "Comprehensive dashboard and analytics for sellers to manage and grow their business." }
+    }
+  },
+  "JanathaMirror": {
+    "partOf": "Part of Doddapaneni Group",
+    "subtitle": "Truth, Perspective, and the Power of Information.",
+    "sectionTitle": "The Voice of the People",
+    "p1": "Janatha Mirror is a dynamic media enterprise committed to journalistic integrity and public awareness. In an era of information overload, we strive to provide clarity, depth, and context to the stories that matter most.",
+    "p2": "Covering politics, business, entertainment, and social issues, Janatha Mirror connects communities through reliable news and engaging content. Our digital-first approach ensures that information is accessible, timely, and impactful.",
+    "features": {
+      "unbiasedReporting": { "title": "Unbiased Reporting", "description": "Delivering facts as they are, without bias or distortion." },
+      "digitalFirst": { "title": "Digital First", "description": "Optimized for the modern web, mobile, and social platforms." },
+      "multimediaContent": { "title": "Multimedia Content", "description": "Rich video content, interviews, and documentaries." },
+      "globalPerspective": { "title": "Global Perspective", "description": "Local stories with global relevance and international coverage." }
+    }
+  },
+  "DealsMedi": {
+    "partOf": "Part of Doddapaneni Group",
+    "subtitle": "Your Ultimate Destination for Exclusive Deals and Digital Offers.",
+    "sectionTitle": "Smart Shopping, Smarter Savings",
+    "p1": "DealsMedi is a premier digital platform connecting consumers with the best deals, discounts, and offers across various categories. We partner with top brands to bring you exclusive savings.",
+    "p2": "From daily essentials to luxury items, DealsMedi curates the most attractive offers, ensuring you get the best value for your money. Our platform simplifies the savings experience for modern shoppers.",
+    "features": {
+      "exclusiveOffers": { "title": "Exclusive Offers", "description": "Access to members-only deals and limited-time discounts." },
+      "digitalCoupons": { "title": "Digital Coupons", "description": "Instant savings with easy-to-use digital coupons." },
+      "brandPartnerships": { "title": "Brand Partnerships", "description": "Collaborations with leading global and local brands." },
+      "userRewards": { "title": "User Rewards", "description": "Earn points and rewards for every deal you claim." }
+    }
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "homeButton": "Go Back Home"
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "We apologize for the inconvenience. An unexpected error has occurred.",
+    "retry": "Try again"
+  }
+}
