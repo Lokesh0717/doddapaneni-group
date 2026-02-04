@@ -1,26 +1,25 @@
 "use client";
 
-import { 
-  ShoppingCart, 
-  Cpu, 
-  Megaphone, 
-  Stethoscope, 
-  Building, 
-  Globe, 
-  Utensils, 
-  GraduationCap, 
-  Truck, 
-  Tv, 
-  Factory, 
+import {
+  ShoppingCart,
+  Cpu,
+  Megaphone,
+  Stethoscope,
+  Building,
+  Globe,
+  Utensils,
+  GraduationCap,
+  Truck,
+  Tv,
+  Factory,
   Users,
   CheckCircle,
   LucideIcon
 } from 'lucide-react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import ContentPage from '@/components/ContentPage';
 
-// Map service keys to icons
 const iconMap: Record<string, LucideIcon> = {
   "ecommerce": ShoppingCart,
   "software": Cpu,
@@ -37,6 +36,7 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function Services() {
+  const locale = useLocale();
   const t = useTranslations('ServicesPage');
   const tServices = useTranslations('Home.servicesList');
 
@@ -59,76 +59,55 @@ export default function Services() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+      transition: { staggerChildren: 0.06 }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 16 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.5
-      }
+      transition: { duration: 0.4 }
     }
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
-      {/* Header */}
-      <section className="relative bg-slate-900 text-white py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-             <Image
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
-                alt="Global Services"
-                fill
-                className="object-cover opacity-20"
-                priority
-             />
-             <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-blue-900/80 to-slate-900/90"></div>
-             <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+    <ContentPage pageKey="services" locale={locale}>
+    <div className="min-h-screen bg-white">
+      {/* Page heading – small blue strip */}
+      <section className="bg-blue-900 py-8 md:py-10 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-2xl md:text-3xl font-bold text-white">{t('title')}</h1>
+          <p className="mt-2 text-blue-200 text-sm md:text-base max-w-2xl mx-auto">{t('description')}</p>
         </div>
-        
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative z-10 max-w-7xl mx-auto text-center"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('title')}</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            {t('description')}
-          </p>
-        </motion.div>
       </section>
 
       {/* Services List */}
-      <div className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <motion.div 
+      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
+            className="grid md:grid-cols-2 gap-4"
           >
             {serviceKeys.map((key, index) => {
               const IconComponent = iconMap[key] || CheckCircle;
-              
               return (
-                <motion.div 
-                  key={index} 
+                <motion.div
+                  key={index}
                   variants={itemVariants}
-                  className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row gap-6 group"
+                  className="bg-white p-5 rounded-xl border border-blue-200 flex flex-col sm:flex-row gap-4 hover:border-blue-600 hover:shadow-md transition-all duration-300"
                 >
-                  <div className="bg-blue-50 p-4 rounded-xl flex-shrink-0 h-fit w-fit group-hover:bg-blue-600 transition-colors duration-300">
-                    <IconComponent className="text-blue-600 group-hover:text-white transition-colors duration-300" size={32} />
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center text-blue-800">
+                    <IconComponent size={24} strokeWidth={1.75} />
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">{tServices(`${key}.title`)}</h3>
-                    <p className="text-slate-600 leading-relaxed">
+                  <div className="min-w-0">
+                    <h3 className="text-lg font-bold text-slate-900 mb-1">
+                      {tServices(`${key}.title`)}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
                       {tServices(`${key}.description`)}
                     </p>
                   </div>
@@ -137,7 +116,8 @@ export default function Services() {
             })}
           </motion.div>
         </div>
-      </div>
+      </section>
     </div>
+    </ContentPage>
   );
 }

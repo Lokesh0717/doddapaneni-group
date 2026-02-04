@@ -54,7 +54,7 @@ export default function Navbar() {
   
   const mobileButtonClass = isTransparent 
     ? 'text-white hover:bg-white/10' 
-    : 'text-blue-900 hover:bg-blue-50';
+    : 'text-blue-900 hover:bg-blue-100';
 
   const handleLogoClick = () => {
     if (pathname === '/') {
@@ -80,11 +80,11 @@ export default function Navbar() {
               className="flex-shrink-0 flex items-center gap-2 group"
               onClick={handleLogoClick}
             >
-              <Image 
-                src="/logo.png" 
-                alt={companyName} 
-                width={200} 
-                height={80} 
+              <Image
+                src="/logo.png"
+                alt={companyName}
+                width={200}
+                height={80}
                 className="h-16 w-auto object-contain"
                 priority
               />
@@ -98,7 +98,7 @@ export default function Navbar() {
                 className={`px-4 py-2 rounded-2xl text-sm font-medium transition-all duration-300 hover:backdrop-blur-md hover:scale-105 border border-transparent ${
                   isTransparent 
                     ? 'text-white hover:bg-white/20 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] hover:border-white/30' 
-                    : 'text-blue-900 hover:bg-blue-500/10 hover:shadow-[0_8px_32px_0_rgba(30,58,138,0.1)] hover:border-blue-200/50'
+                    : 'text-blue-900 hover:bg-blue-100 hover:shadow-[0_8px_32px_0_rgba(30,58,138,0.1)] hover:border-blue-200/50'
                 }`}
               >
                 {link.label}

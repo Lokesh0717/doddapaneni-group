@@ -22,7 +22,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-8">
+    <footer className="bg-blue-900 text-white pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -35,22 +35,22 @@ export default function Footer() {
                 className="h-32 w-auto object-contain"
               />
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-blue-400 text-sm leading-relaxed">
               {t('tagline')}
             </p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('quickLinks')}</h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-400 hover:text-white text-sm">{navT('home')}</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-white text-sm">{navT('about')}</Link></li>
-              <li><Link href="/services" className="text-gray-400 hover:text-white text-sm">{navT('services')}</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white text-sm">{navT('contact')}</Link></li>
+              <li><Link href="/" className="text-blue-300 hover:text-white text-sm">{navT('home')}</Link></li>
+              <li><Link href="/about" className="text-blue-300 hover:text-white text-sm">{navT('about')}</Link></li>
+              <li><Link href="/services" className="text-blue-300 hover:text-white text-sm">{navT('services')}</Link></li>
+              <li><Link href="/contact" className="text-blue-300 hover:text-white text-sm">{navT('contact')}</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('contact')}</h3>
-            <div className="text-gray-400 text-sm space-y-6">
+            <div className="text-blue-400 text-sm space-y-6">
               {contact.locations.map((location, index) => (
                 <div key={index} className="space-y-3">
                   <p>
@@ -83,7 +83,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-blue-800 mt-8 pt-8 text-center text-blue-400 text-sm">
           <p>&copy; {currentYear} {companyName}. {t('rights')}</p>
         </div>
       </div>

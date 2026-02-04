@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Database (MongoDB)
+
+The app uses **MongoDB** with Mongoose. Suggested database name: **`doddapaneni_group`**.
+
+- Set `DATABASE_URL` or `MONGODB_URI` in `.env.local` (e.g. `mongodb://127.0.0.1:27017/doddapaneni_group` for local MongoDB).
+- Create the admin user: `npm run db:reset` (clears users and creates admin: `admin@doddapaneni-group.com` / `admin123`).
+- Seed only (if DB exists): `npm run db:seed`.
+
 ## Getting Started
 
 First, run the development server:

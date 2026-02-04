@@ -1,5 +1,5 @@
 /**
- * PM2 config for running Next.js in production on Vultr (or any VPS).
+ * PM2 config for running Next.js in production (VPS / Node server).
  * Usage: pm2 start ecosystem.config.cjs
  */
 module.exports = {

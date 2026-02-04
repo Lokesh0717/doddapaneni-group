@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import LayoutWithNav from "@/components/LayoutWithNav";
+import Providers from "@/components/Providers";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, getTranslations} from 'next-intl/server';
 import {notFound} from 'next/navigation';
@@ -36,6 +37,8 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') ?? '';
 
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
@@ -49,13 +52,11 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`${inter.className} antialiased min-h-screen flex flex-col`}>
-        <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </NextIntlClientProvider>
+        <Providers>
+          <NextIntlClientProvider messages={messages}>
+            <LayoutWithNav initialPathname={pathname}>{children}</LayoutWithNav>
+          </NextIntlClientProvider>
+        </Providers>
       </body>
     </html>
   );

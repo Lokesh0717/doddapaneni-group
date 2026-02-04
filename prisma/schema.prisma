@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String     @id @default(cuid())
+  email         String     @unique
+  passwordHash  String
+  name          String?
+  role          Role       @default(DEVELOPER)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  createdById   String?
+  createdBy     User?      @relation("CreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  createdUsers  User[]     @relation("CreatedBy")
+  loginLogs     LoginLog[]
+}
+
+enum Role {
+  ADMIN
+  DEVELOPER
+  DIGITAL_MARKETER
+}
+
+model LoginLog {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  loggedAt  DateTime @default(now())
+}

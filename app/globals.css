@@ -3,6 +3,59 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Role theme defaults (unauthenticated / fallback) */
+  --theme-primary: 51 65 85; /* slate-700 */
+  --theme-primary-foreground: 248 250 252;
+  --theme-background: 248 250 252;
+  --theme-background-muted: 241 245 249;
+  --theme-accent: 100 116 139;
+  --theme-accent-muted: 148 163 184;
+  /* Corporate / public pages (MNC-style) */
+  --corporate-header: 15 23 42;
+  --corporate-primary: 79 70 229;
+  --corporate-primary-light: 238 242 255;
+  --corporate-surface: 248 250 252;
+  --corporate-muted: 100 116 139;
+}
+
+/* Super Admin: violet / authority */
+[data-theme="superadmin"] {
+  --theme-primary: 124 58 237;
+  --theme-primary-foreground: 255 255 255;
+  --theme-background: 245 243 255;
+  --theme-background-muted: 238 242 255;
+  --theme-accent: 139 92 246;
+  --theme-accent-muted: 196 181 253;
+}
+
+/* Admin: amber / management */
+[data-theme="admin"] {
+  --theme-primary: 217 119 6;
+  --theme-primary-foreground: 255 255 255;
+  --theme-background: 255 251 235;
+  --theme-background-muted: 254 243 199;
+  --theme-accent: 245 158 11;
+  --theme-accent-muted: 253 230 138;
+}
+
+/* Developer: blue / tech */
+[data-theme="developer"] {
+  --theme-primary: 37 99 235;
+  --theme-primary-foreground: 255 255 255;
+  --theme-background: 239 246 255;
+  --theme-background-muted: 219 234 254;
+  --theme-accent: 59 130 246;
+  --theme-accent-muted: 147 197 253;
+}
+
+/* Digital Marketer: emerald / growth */
+[data-theme="marketer"] {
+  --theme-primary: 5 150 105;
+  --theme-primary-foreground: 255 255 255;
+  --theme-background: 236 253 245;
+  --theme-background-muted: 209 250 229;
+  --theme-accent: 16 185 129;
+  --theme-accent-muted: 110 231 183;
 }
 
 @theme inline {
@@ -10,6 +63,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* Theme tokens (use with bg-theme-primary, text-theme-accent, etc.) */
+  --color-theme-primary: rgb(var(--theme-primary));
+  --color-theme-primary-foreground: rgb(var(--theme-primary-foreground));
+  --color-theme-background: rgb(var(--theme-background));
+  --color-theme-background-muted: rgb(var(--theme-background-muted));
+  --color-theme-accent: rgb(var(--theme-accent));
+  --color-theme-accent-muted: rgb(var(--theme-accent-muted));
+  /* Corporate (public pages) */
+  --color-corporate-header: rgb(var(--corporate-header));
+  --color-corporate-primary: rgb(var(--corporate-primary));
+  --color-corporate-primary-light: rgb(var(--corporate-primary-light));
+  --color-corporate-surface: rgb(var(--corporate-surface));
+  --color-corporate-muted: rgb(var(--corporate-muted));
 }
 
 body {

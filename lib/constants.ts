@@ -1,0 +1,10 @@
+export const ROLES = ['SUPER_ADMIN', 'ADMIN', 'DEVELOPER', 'DIGITAL_MARKETER'] as const;
+export type Role = (typeof ROLES)[number];
+
+/** Display order in every dashboard: Super Admin first, then Admin, Developer, Digital Marketer */
+export const ROLE_DISPLAY_ORDER: readonly Role[] = ROLES;
+
+export function getRoleOrder(role: Role): number {
+  const i = ROLES.indexOf(role);
+  return i === -1 ? 999 : i;
+}

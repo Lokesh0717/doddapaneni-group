@@ -1,12 +1,14 @@
 "use client";
 
-import {Link} from '@/i18n/routing';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { ArrowRight, CheckCircle, TrendingUp, Shield, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import ContentPage from '@/components/ContentPage';
 
 export default function Home() {
+  const locale = useLocale();
   const t = useTranslations('Home');
   
   const services = [
@@ -82,6 +84,7 @@ export default function Home() {
   };
 
   return (
+    <ContentPage pageKey="home" locale={locale}>
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-slate-900 text-white pt-32 pb-12 px-4 sm:px-6 lg:px-8">
@@ -207,55 +210,6 @@ export default function Home() {
                 </Link>
              </motion.div>
           </div>
-
-          {/* Group Companies Section - Marquee */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
-            <div className="text-center mb-8">
-               <h3 className="text-2xl font-bold text-slate-900 mb-4">{t('ourGroupCompanies')}</h3>
-               <p className="text-slate-600">{t('drivingExcellence')}</p>
-            </div>
-            
-            <div className="relative overflow-hidden py-6 bg-white/50 rounded-2xl border border-slate-100">
-              <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10">
-</div>
-              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10"></div>
-              
-              <div className="flex">
-                <motion.div 
-                  className="flex gap-16 md:gap-24 items-center flex-nowrap pr-16 md:pr-24"
-                  animate={{ x: "-50%" }}
-                  transition={{ 
-                    repeat: Infinity, 
-                    ease: "linear", 
-                    duration: 30 
-                  }}
-                >
-                  {[...Array(6)].map((_, i) => (
-                    <div key={i} className="flex gap-16 md:gap-24 items-center shrink-0">
-                      {[
-                         { src: '/dlsin.jpg', link: '/companies/dlsin' },
-                         { src: '/janathamirror.jpeg', link: '/companies/janatha-mirror' },
-                         { src: '/dealsmedi.png', link: '/companies/dealsmedi' }
-                       ].map((logo, index) => (
-                        <Link 
-                          key={`${i}-${index}`} 
-                          href={logo.link}
-                          className="relative w-40 h-24 flex-shrink-0 transition-all duration-300 hover:scale-110"
-                        >
-                          <Image 
-                            src={logo.src}  
-                            alt={`Group Company Logo ${index + 1}`} 
-                            fill 
-                            className="object-contain"
-                          />
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
-                </motion.div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -307,21 +261,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-slate-900"></div>
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">{t('readyToTransform')}</h2>
-          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-            {t('partnerWithUs')}
-          </p>
-          <Link href="/contact" className="inline-block bg-white text-blue-900 px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-900/20 transition-all transform hover:-translate-y-1">
-            {t('getInTouch')}
-          </Link>
+      {/* Group Companies Section - Marquee (scrolling logos) */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">{t('ourGroupCompanies')}</h3>
+            <p className="text-slate-600">{t('drivingExcellence')}</p>
+          </div>
+          <div className="relative overflow-hidden py-6 bg-white/50 rounded-2xl border border-slate-100">
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10" />
+            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10" />
+            <div className="flex">
+              <motion.div
+                className="flex gap-16 md:gap-24 items-center flex-nowrap pr-16 md:pr-24"
+                animate={{ x: '-50%' }}
+                transition={{ repeat: Infinity, ease: 'linear', duration: 30 }}
+              >
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="flex gap-16 md:gap-24 items-center shrink-0">
+                    {[
+                      { src: '/dlsin.jpg', link: '/companies/dlsin' },
+                      { src: '/janathamirror.jpeg', link: '/companies/janatha-mirror' },
+                      { src: '/dealsmedi.png', link: '/companies/dealsmedi' },
+                    ].map((logo, index) => (
+                      <Link
+                        key={`${i}-${index}`}
+                        href={logo.link}
+                        className="relative w-40 h-24 flex-shrink-0 transition-all duration-300 hover:scale-110"
+                      >
+                        <Image
+                          src={logo.src}
+                          alt={`Group Company Logo ${index + 1}`}
+                          fill
+                          className="object-contain"
+                        />
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
+
     </div>
+    </ContentPage>
   );
 }

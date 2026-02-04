@@ -127,7 +127,13 @@
   },
   "ServicesPage": {
     "title": "Our Services",
-    "description": "Comprehensive solutions tailored to meet the evolving needs of modern businesses. We deliver excellence across industries."
+    "description": "Comprehensive solutions tailored to meet the evolving needs of modern businesses. We deliver excellence across industries.",
+    "diverseVentures": "Doddapaneni Group operates across this sector.",
+    "companyDesc": {
+      "dealsmedi": "Your trusted online marketplace for medical and health products in the USA—CPAP, BiPAP, mobility aids, and more.",
+      "dlsin": "A multivendor e-commerce platform connecting buyers and sellers worldwide with secure payments and fast logistics.",
+      "janathaMirror": "A digital-first media enterprise delivering reliable news and engaging content with journalistic integrity."
+    }
   },
   "ContactPage": {
     "headerTitle": "Contact Us",
@@ -176,6 +182,7 @@
   "JanathaMirror": {
     "partOf": "Part of Doddapaneni Group",
     "subtitle": "Truth, Perspective, and the Power of Information.",
+    "followUs": "Follow us",
     "sectionTitle": "The Voice of the People",
     "p1": "Janatha Mirror is a dynamic media enterprise committed to journalistic integrity and public awareness. In an era of information overload, we strive to provide clarity, depth, and context to the stories that matter most.",
     "p2": "Covering politics, business, entertainment, and social issues, Janatha Mirror connects communities through reliable news and engaging content. Our digital-first approach ensures that information is accessible, timely, and impactful.",
@@ -188,15 +195,18 @@
   },
   "DealsMedi": {
     "partOf": "Part of Doddapaneni Group",
-    "subtitle": "Your Ultimate Destination for Exclusive Deals and Digital Offers.",
-    "sectionTitle": "Smart Shopping, Smarter Savings",
-    "p1": "DealsMedi is a premier digital platform connecting consumers with the best deals, discounts, and offers across various categories. We partner with top brands to bring you exclusive savings.",
-    "p2": "From daily essentials to luxury items, DealsMedi curates the most attractive offers, ensuring you get the best value for your money. Our platform simplifies the savings experience for modern shoppers.",
+    "subtitle": "Your trusted online marketplace for medical and health products in the USA.",
+    "followUs": "Follow us",
+    "sectionTitle": "Medical & Health Products for the USA",
+    "p1": "DealsMedi is a website which sells medical products only in the USA, including prescription-required products and non-prescription products. CPAP, BiPAP, oxygen concentrators, hospital beds, mobility chairs, and everything in between are available through our platform.",
+    "p2": "From respiratory care and sleep therapy to mobility aids, bathroom safety, orthopedic supports, and medical supplies—DealsMedi brings you a single trusted marketplace for healthcare and wellness products. Shop with confidence at dealsmedi.com.",
+    "websiteUrl": "https://dealsmedi.com/",
+    "visitWebsite": "Visit DealsMedi",
     "features": {
-      "exclusiveOffers": { "title": "Exclusive Offers", "description": "Access to members-only deals and limited-time discounts." },
-      "digitalCoupons": { "title": "Digital Coupons", "description": "Instant savings with easy-to-use digital coupons." },
-      "brandPartnerships": { "title": "Brand Partnerships", "description": "Collaborations with leading global and local brands." },
-      "userRewards": { "title": "User Rewards", "description": "Earn points and rewards for every deal you claim." }
+      "respiratory": { "title": "Respiratory & Sleep Therapy", "description": "CPAP, BiPAP machines, oxygen concentrators, masks, and sleep apnea therapy products." },
+      "mobility": { "title": "Mobility & Daily Living", "description": "Mobility scooters, wheelchairs, rollators, bathroom safety, and daily living aids." },
+      "bedsAndChairs": { "title": "Hospital Beds & Chairs", "description": "Hospital beds, electric beds, mobility chairs, and homecare equipment." },
+      "prescriptionAndOTC": { "title": "Prescription & OTC", "description": "Prescription-required and over-the-counter medical and health products." }
     }
   },
   "NotFound": {

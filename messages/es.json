@@ -127,7 +127,13 @@
   },
   "ServicesPage": {
     "title": "Nuestros Servicios",
-    "description": "Soluciones integrales adaptadas para satisfacer las necesidades cambiantes de las empresas modernas. Entregamos excelencia en todas las industrias."
+    "description": "Soluciones integrales adaptadas para satisfacer las necesidades cambiantes de las empresas modernas. Entregamos excelencia en todas las industrias.",
+    "diverseVentures": "Doddapaneni Group opera en este sector.",
+    "companyDesc": {
+      "dealsmedi": "Tu mercado en línea de confianza para productos médicos y de salud en EE. UU.: CPAP, BiPAP, ayudas de movilidad y más.",
+      "dlsin": "Una plataforma de comercio electrónico multivendedor que conecta compradores y vendedores en todo el mundo con pagos seguros.",
+      "janathaMirror": "Un medio digital que ofrece noticias fiables y contenido atractivo con integridad periodística."
+    }
   },
   "ContactPage": {
     "headerTitle": "Contáctenos",
@@ -140,8 +146,8 @@
     "phoneAvailability": "Lun-Vie de 9am a 6pm.",
     "locationsTitle": "Ubicaciones",
     "locationIndia": "India (Principal)",
-    "addressIndia": "Plot No 22,23,41,42 & 43, Sri Krishna Avenue, Venkataramana Colony, Gokul Plots, Vasanth Nagar, Ranga Reddy District, 500085",
-    "locationUSA": "USA",
+    "addressIndia": "Parcela No. 22,23,41,42 y 43, Avenida Sri Krishna, Colonia Venkataramana, Parcelas Gokul, Vasanth Nagar, Distrito Ranga Reddy, 500085",
+    "locationUSA": "EE.UU.",
     "addressUSA": "5052 SW 40th PL, Ocala, Florida, 34474",
     "formTitle": "Envíenos un Mensaje",
     "successTitle": "¡Mensaje Enviado!",
@@ -167,36 +173,64 @@
     "p1": "Dlsin es un ecosistema de comercio electrónico de múltiples proveedores de vanguardia diseñado para empoderar a las empresas y deleitar a los clientes. Cerramos la brecha entre los vendedores locales y los mercados globales, ofreciendo una experiencia de compra perfecta respaldada por una tecnología robusta.",
     "p2": "Desde el comercio minorista hasta el mayorista, Dlsin proporciona la infraestructura para que el comercio digital prospere. Nuestra plataforma admite diversas categorías, asegurando que los productos de calidad lleguen a los clientes de manera eficiente, sin importar dónde se encuentren.",
     "features": {
-      "globalMarketplace": { "title": "Mercado Global", "description": "Conectando compradores y vendedores de todo el mundo en una plataforma única y unificada." },
-      "securePayments": { "title": "Pagos Seguros", "description": "Cifrado avanzado y pasarelas de pago seguras que garantizan transacciones seguras para todos los usuarios." },
-      "fastLogistics": { "title": "Logística Rápida", "description": "Red logística integrada para entregas puntuales a través de las fronteras." },
-      "vendorTools": { "title": "Herramientas para Vendedores", "description": "Panel completo y análisis para que los vendedores gestionen y hagan crecer su negocio." }
+      "globalMarketplace": {
+        "title": "Mercado Global",
+        "description": "Conectando compradores y vendedores de todo el mundo en una plataforma única y unificada."
+      },
+      "securePayments": {
+        "title": "Pagos Seguros",
+        "description": "Cifrado avanzado y pasarelas de pago seguras que garantizan transacciones seguras para todos los usuarios."
+      },
+      "fastLogistics": {
+        "title": "Logística Rápida",
+        "description": "Red logística integrada para entregas puntuales a través de las fronteras."
+      },
+      "vendorTools": {
+        "title": "Herramientas para Vendedores",
+        "description": "Panel completo y análisis para que los vendedores gestionen y hagan crecer su negocio."
+      }
     }
   },
   "JanathaMirror": {
     "partOf": "Parte de Doddapaneni Group",
     "subtitle": "Verdad, perspectiva y el poder de la información.",
+    "followUs": "Síguenos",
     "sectionTitle": "La Voz del Pueblo",
     "p1": "Janatha Mirror es una empresa de medios dinámica comprometida con la integridad periodística y la conciencia pública. En una era de sobrecarga de información, nos esforzamos por brindar claridad, profundidad y contexto a las historias que más importan.",
     "p2": "Cubriendo política, negocios, entretenimiento y problemas sociales, Janatha Mirror conecta a las comunidades a través de noticias confiables y contenido atractivo. Nuestro enfoque digital garantiza que la información sea accesible, oportuna e impactante.",
     "features": {
-      "unbiasedReporting": { "title": "Reportajes Imparciales", "description": "Entregar los hechos tal como son, sin prejuicios ni distorsiones." },
-      "digitalFirst": { "title": "Digital Primero", "description": "Optimizado para la web moderna, dispositivos móviles y plataformas sociales." },
-      "multimediaContent": { "title": "Contenido Multimedia", "description": "Contenido de video enriquecido, entrevistas y documentales." },
-      "globalPerspective": { "title": "Perspectiva Global", "description": "Historias locales con relevancia global y cobertura internacional." }
+      "unbiasedReporting": {
+        "title": "Reportajes Imparciales",
+        "description": "Entregar los hechos tal como son, sin prejuicios ni distorsiones."
+      },
+      "digitalFirst": {
+        "title": "Digital Primero",
+        "description": "Optimizado para la web moderna, dispositivos móviles y plataformas sociales."
+      },
+      "multimediaContent": {
+        "title": "Contenido Multimedia",
+        "description": "Contenido de video enriquecido, entrevistas y documentales."
+      },
+      "globalPerspective": {
+        "title": "Perspectiva Global",
+        "description": "Historias locales con relevancia global y cobertura internacional."
+      }
     }
   },
   "DealsMedi": {
     "partOf": "Parte de Doddapaneni Group",
-    "subtitle": "Su destino final para ofertas exclusivas y ofertas digitales.",
-    "sectionTitle": "Compras inteligentes, ahorros más inteligentes",
-    "p1": "DealsMedi es una plataforma digital de primer nivel que conecta a los consumidores con las mejores ofertas, descuentos y promociones en varias categorías. Nos asociamos con las mejores marcas para ofrecerle ahorros exclusivos.",
-    "p2": "Desde artículos esenciales diarios hasta artículos de lujo, DealsMedi selecciona las ofertas más atractivas, asegurando que obtenga el mejor valor por su dinero.",
+    "subtitle": "Su mercado de confianza de productos médicos y de salud en EE. UU.",
+    "followUs": "Síguenos",
+    "sectionTitle": "Productos médicos y de salud para EE. UU.",
+    "p1": "DealsMedi es un sitio web que vende productos médicos solo en EE. UU., incluidos productos con receta y sin receta. CPAP, BiPAP, concentradores de oxígeno, camas de hospital, sillas de movilidad y todo lo demás están disponibles en nuestra plataforma.",
+    "p2": "Desde atención respiratoria y terapia del sueño hasta ayudas de movilidad, seguridad en el baño, soportes ortopédicos y suministros médicos: DealsMedi le ofrece un único mercado de confianza para productos de salud y bienestar. Compre con confianza en dealsmedi.com.",
+    "websiteUrl": "https://dealsmedi.com/",
+    "visitWebsite": "Visitar DealsMedi",
     "features": {
-      "exclusiveOffers": { "title": "Ofertas Exclusivas", "description": "Acceso a ofertas solo para miembros y descuentos por tiempo limitado." },
-      "digitalCoupons": { "title": "Cupones Digitales", "description": "Ahorros instantáneos con cupones digitales fáciles de usar." },
-      "brandPartnerships": { "title": "Asociaciones de Marca", "description": "Colaboraciones con marcas líderes globales y locales." },
-      "userRewards": { "title": "Recompensas para Usuarios", "description": "Gane puntos y recompensas por cada oferta que reclame." }
+      "respiratory": { "title": "Respiratorio y terapia del sueño", "description": "CPAP, BiPAP, concentradores de oxígeno, mascarillas y productos para apnea del sueño." },
+      "mobility": { "title": "Movilidad y vida diaria", "description": "Scooters de movilidad, sillas de ruedas, andadores, seguridad en el baño y ayudas diarias." },
+      "bedsAndChairs": { "title": "Camas y sillas de hospital", "description": "Camas de hospital, camas eléctricas, sillas de movilidad y equipo de atención domiciliaria." },
+      "prescriptionAndOTC": { "title": "Con receta y sin receta", "description": "Productos médicos y de salud con receta y de venta libre." }
     }
   },
   "NotFound": {
@@ -209,4 +243,4 @@
     "description": "Pedimos disculpas por las molestias. Ha ocurrido un error inesperado.",
     "retry": "Intentar de nuevo"
   }
- }
+}

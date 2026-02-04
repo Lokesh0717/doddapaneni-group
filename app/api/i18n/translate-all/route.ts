@@ -1,0 +1,22 @@
+import { NextResponse } from 'next/server';
+import { auth } from '@/auth';
+import { runTranslateAll } from '@/lib/run-translate-all';
+
+export async function POST() {
+  const session = await auth();
+  const role = session?.user?.role;
+  if (!session?.user || (role !== 'DEVELOPER' && role !== 'ADMIN' && role !== 'SUPER_ADMIN')) {
+    return NextResponse.json({ message: 'Forbidden' }, { status: 403 });
+  }
+
+  try {
+    const result = await runTranslateAll();
+    return NextResponse.json(result);
+  } catch (err) {
+    console.error('Translate-all error:', err);
+    return NextResponse.json(
+      { message: err instanceof Error ? err.message : 'Translation failed' },
+      { status: 500 }
+    );
+  }
+}
