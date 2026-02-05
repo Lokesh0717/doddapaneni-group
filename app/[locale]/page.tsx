@@ -110,10 +110,19 @@ export default function Home() {
             <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 font-medium text-sm">
               {t('innovating')}
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
-              {t.rich('heroTitle', {
-                highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{chunks}</span>
-              })}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight flex flex-col gap-4">
+              <span>
+                {t.rich('heroTitleLine1', {
+                  highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{chunks}</span>
+                })}
+              </span>
+              {t('heroTitleLine2') ? (
+                <span>
+                  {t.rich('heroTitleLine2', {
+                    highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{chunks}</span>
+                  })}
+                </span>
+              ) : null}
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
               {t('heroSubtitle')}

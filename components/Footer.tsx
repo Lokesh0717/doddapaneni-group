@@ -8,14 +8,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const companyName = "Doddapaneni Group";
   const contact = {
-    email: "lk8772000@gmail.com",
+    email: "info@doddapanenigroup.net",
     locations: [
       {
-        phone: "+91 8142246666",
+        phone: "+91 814 224 6666",
         address: "Plot No 22,23,41,42 & 43, Sri Krishna Avenue, Venkataramana Colony, Gokul Plots, Vasanth Nagar, Ranga Reddy District, 500085"
       },
       {
-        phone: "+1(352)230-8586",
+        phone: "+1 (352)230-8586",
         address: "5052 SW 40th PL, Ocala, Florida, 34474"
       }
     ]
@@ -30,9 +30,9 @@ export default function Footer() {
               <Image 
                 src="/logo.png" 
                 alt={companyName} 
-                width={500} 
-                height={200} 
-                className="h-32 w-auto object-contain"
+                width={280} 
+                height={112} 
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="text-blue-400 text-sm leading-relaxed">
