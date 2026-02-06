@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 0.0.0.0",
     "lint": "eslint",
     "i18n:sync": "node scripts/sync-locales.mjs",
     "db:seed": "node scripts/seed.mjs",
@@ -29,6 +29,11 @@
     "recharts": "^3.7.0",
     "tailwind-merge": "^3.4.0",
     "zod": "^4.3.6"
+  },
+  "overrides": {
+    "@auth/core": {
+      "nodemailer": "^7.0.13"
+    }
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
