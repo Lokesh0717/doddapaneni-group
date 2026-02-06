@@ -7,6 +7,7 @@
     "home": "Home",
     "about": "About Us",
     "services": "Services",
+    "blog": "Blog",
     "contact": "Contact Us",
     "language": "Language"
   },
@@ -320,5 +321,14 @@
         "answer": "You can subscribe to our newsletter by entering your email address in the subscription form located in the footer of our website."
       }
     }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Insights, trends, and updates from Doddapaneni Group",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "relatedPosts": "Related Posts",
+    "categories": "Categories",
+    "recentPosts": "Recent Posts"
   }
 }

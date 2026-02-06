@@ -7,6 +7,7 @@
     "home": "Inicio",
     "about": "Sobre Nosotros",
     "services": "Servicios",
+    "blog": "Blog",
     "contact": "Contáctenos",
     "language": "Idioma"
   },
@@ -344,5 +345,14 @@
         "answer": "Puede suscribirse a nuestro boletín ingresando su dirección de correo electrónico en el formulario de suscripción ubicado en el pie de página de nuestro sitio web."
       }
     }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Perspectivas, tendencias y actualizaciones de Doddapaneni Group",
+    "readMore": "Leer Más",
+    "backToBlog": "Volver al Blog",
+    "relatedPosts": "Publicaciones Relacionadas",
+    "categories": "Categorías",
+    "recentPosts": "Publicaciones Recientes"
   }
 }

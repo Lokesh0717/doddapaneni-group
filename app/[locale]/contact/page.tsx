@@ -91,7 +91,7 @@ export default function Contact() {
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-900">
                     <Phone size={20} strokeWidth={1.75} />
                   </div>
-                  <div>
+                  <div> 
                     <h3 className="text-base font-semibold text-slate-900">{t('phoneTitle')}</h3>
                     <p className="text-slate-700 text-sm mt-1">+91 814 224 6666 (India)</p>
                     <p className="text-slate-700 text-sm">+1 (352)230-8586 (USA)</p>

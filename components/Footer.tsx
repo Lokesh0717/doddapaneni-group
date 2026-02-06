@@ -60,6 +60,7 @@ export default function Footer() {
                 <li><Link href="/" className="text-blue-300 hover:text-white text-xs md:text-sm transition-colors">{navT('home')}</Link></li>
                 <li><Link href="/about" className="text-blue-300 hover:text-white text-xs md:text-sm transition-colors">{navT('about')}</Link></li>
                 <li><Link href="/services" className="text-blue-300 hover:text-white text-xs md:text-sm transition-colors">{navT('services')}</Link></li>
+                <li><Link href="/blog" className="text-blue-300 hover:text-white text-xs md:text-sm transition-colors">{navT('blog')}</Link></li>
                 <li><Link href="/contact" className="text-blue-300 hover:text-white text-xs md:text-sm transition-colors">{navT('contact')}</Link></li>
                 <li><Link href="/faq" className="text-blue-300 hover:text-white text-xs md:text-sm transition-colors">{t('faq')}</Link></li>
               </ul>
