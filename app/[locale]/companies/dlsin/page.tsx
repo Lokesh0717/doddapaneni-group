@@ -59,8 +59,8 @@ export default function Dlsin() {
               className="relative rounded-xl overflow-hidden border border-blue-200 aspect-[4/3]"
             >
               <Image
-                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80"
-                alt="Online Shopping"
+                src="/ecommerce.jpg"
+                alt="Ecommerce"
                 fill
                 className="object-cover"
               />

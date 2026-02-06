@@ -59,7 +59,7 @@ export default function JanathaMirror() {
               className="relative rounded-xl overflow-hidden border border-blue-200 aspect-[4/3]"
             >
               <Image
-                src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80"
+                src="/news.jpg"
                 alt="Journalist working"
                 fill
                 className="object-cover"

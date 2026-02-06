@@ -88,8 +88,8 @@ export default function DealsMedi() {
               className="relative rounded-xl overflow-hidden border border-blue-200 aspect-[4/3]"
             >
               <Image
-                src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80"
-                alt="Medical and health products"
+                src="/medical.jpg"
+                alt="Medical and health products" 
                 fill
                 className="object-cover"
               />
