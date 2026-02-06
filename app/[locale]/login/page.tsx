@@ -7,7 +7,7 @@
 
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 
 export default function LoginPage() {
@@ -17,7 +17,9 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl') ?? '/en/dashboard';
+  const params = useParams<{ locale?: string }>();
+  const locale = params?.locale ?? 'en';
+  const callbackUrl = searchParams.get('callbackUrl') ?? `/${locale}/dashboard`;
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -35,8 +37,10 @@ export default function LoginPage() {
         setLoading(false);
         return;
       }
-      if (res?.url) router.push(res.url);
-      else router.push(callbackUrl);
+      // Ensure the session cookie is reflected in server components + middleware redirects.
+      if (res?.url) router.replace(res.url);
+      else router.replace(callbackUrl);
+      router.refresh();
     } catch {
       setError('Something went wrong. Please try again.');
       setLoading(false);
