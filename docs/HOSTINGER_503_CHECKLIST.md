@@ -31,6 +31,7 @@
 - **DATABASE_URL** = `mongodb+srv://lokeshreddykusam_db_user:iybUfjhzTE4vmqou@doddapanenigroup.veteuqk.mongodb.net/doddapaneni_group?retryWrites=true&w=majority&appName=doddapanenigroup`
 - **AUTH_SECRET** = `3VihJiE6wlWfl5O7Ri2YkXGeqm/haJ1e/A/6selABTk=` (lowercase `l` in `Wfl5`, no quotes)
 - **NEXTAUTH_URL** = `https://lightblue-mule-433546.hostingersite.com` (no trailing slash, no quotes)
+- **AUTH_TRUST_HOST** = `true` (required on some hosts/proxies; fixes Auth.js ClientFetchError / config errors)
 
 ## 5. After changing anything
 

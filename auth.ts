@@ -33,6 +33,9 @@ if (!process.env.AUTH_SECRET) {
 }
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  // Hostinger runs behind a reverse proxy; Auth.js often needs this to avoid
+  // "There was a problem with the server configuration" / ClientFetchError.
+  trustHost: true,
   providers: [
     Credentials({
       name: 'credentials',
