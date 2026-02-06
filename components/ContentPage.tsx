@@ -14,9 +14,16 @@ export default function ContentPage({ pageKey, locale, children }: ContentPagePr
 
   useEffect(() => {
     let cancelled = false;
+    // Show children immediately, fetch content in background
+    setLoading(false);
+    
     (async () => {
       try {
-        const res = await fetch(`/api/content/${pageKey}?locale=${encodeURIComponent(locale)}`);
+        const res = await fetch(`/api/content/${pageKey}?locale=${encodeURIComponent(locale)}`, {
+          // Use cache for faster loads
+          cache: 'force-cache',
+          next: { revalidate: 60 },
+        });
         if (!res.ok) throw new Error('Fetch failed');
         const data = await res.json();
         if (!cancelled && data && (data.title !== undefined || data.body !== undefined)) {
@@ -24,21 +31,12 @@ export default function ContentPage({ pageKey, locale, children }: ContentPagePr
         }
       } catch {
         if (!cancelled) setContent(null);
-      } finally {
-        if (!cancelled) setLoading(false);
       }
     })();
     return () => { cancelled = true; };
   }, [pageKey, locale]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <p className="text-slate-500">Loading…</p>
-      </div>
-    );
-  }
-
+  // Show children immediately, don't block rendering
   if (content && (content.title || content.body)) {
     return (
       <div className="bg-slate-50 min-h-screen">

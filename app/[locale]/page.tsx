@@ -7,6 +7,9 @@ import { motion } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import ContentPage from '@/components/ContentPage';
 
+// Use absolute path so next/image never receives a relative URL
+const HOME_IMAGE = '/home.jpg';
+
 export default function Home() {
   const locale = useLocale();
   const t = useTranslations('Home');
@@ -87,10 +90,10 @@ export default function Home() {
     <ContentPage pageKey="home" locale={locale}>
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white pt-32 pb-12 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-slate-900 text-white pt-20 pb-8 md:pt-24 md:pb-12 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+            src={HOME_IMAGE}
             alt="Corporate Architecture"
             fill
             className="object-cover opacity-50"
@@ -107,10 +110,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="lg:w-3/4"
           >
-            <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 font-medium text-sm">
+            <div className="inline-block px-4 py-1.5 mb-4 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 font-medium text-sm">
               {t('innovating')}
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight flex flex-col gap-4">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight flex flex-col gap-3">
               <span>
                 {t.rich('heroTitleLine1', {
                   highlight: (chunks) => <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{chunks}</span>
@@ -124,7 +127,7 @@ export default function Home() {
                 </span>
               ) : null}
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-slate-300 mb-6 leading-relaxed max-w-2xl">
               {t('heroSubtitle')}
             </p>
             <div className="flex flex-wrap gap-4">
@@ -193,10 +196,11 @@ export default function Home() {
                className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
              >
                 <Image 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+                  src={HOME_IMAGE}
                   alt="Team collaboration"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
              </motion.div>
              

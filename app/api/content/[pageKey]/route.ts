@@ -26,12 +26,20 @@ export async function GET(
     await connectDb();
     const doc = await PageContent.findOne({ pageKey, locale }).lean();
     if (!doc) {
-      return NextResponse.json(null);
+      return NextResponse.json(null, {
+        headers: {
+          'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
+        },
+      });
     }
     return NextResponse.json({
       title: doc.title,
       body: doc.body,
       updatedAt: doc.updatedAt,
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
+      },
     });
   } catch (error) {
     console.error('Content GET error:', error);

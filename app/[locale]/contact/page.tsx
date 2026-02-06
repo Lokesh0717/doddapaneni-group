@@ -83,7 +83,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-base font-semibold text-slate-900">{t('emailTitle')}</h3>
-                    <p className="text-slate-700 text-sm mt-1">lk8772000@gmail.com</p>
+                    <p className="text-slate-700 text-sm mt-1">info@doddapanenigroup.net</p>
                     <p className="text-slate-500 text-xs mt-1">{t('emailResponse')}</p>
                   </div>
                 </div>
@@ -93,8 +93,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-base font-semibold text-slate-900">{t('phoneTitle')}</h3>
-                    <p className="text-slate-700 text-sm mt-1">+91 8142246666 (India)</p>
-                    <p className="text-slate-700 text-sm">+1 (352) 230-8586 (USA)</p>
+                    <p className="text-slate-700 text-sm mt-1">+91 814 224 6666 (India)</p>
+                    <p className="text-slate-700 text-sm">+1 (352)230-8586 (USA)</p>
                     <p className="text-slate-500 text-xs mt-1">{t('phoneAvailability')}</p>
                   </div>
                 </div>

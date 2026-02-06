@@ -57,7 +57,7 @@ export default function About() {
               className="relative rounded-xl overflow-hidden border border-blue-100 aspect-[4/3]"
             >
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+                src="/about.jpg"
                 alt="Strategic Meeting"
                 fill
                 className="object-cover"
