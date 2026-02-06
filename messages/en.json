@@ -17,7 +17,18 @@
     "rights": "All rights reserved.",
     "phone": "Phone",
     "address": "Address",
-    "email": "Email"
+    "email": "Email",
+    "newsletter": "Newsletter",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "subscribed": "Thank you for subscribing!",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "disclaimer": "Disclaimer",
+    "faq": "FAQ / Support",
+    "sitemap": "Sitemap",
+    "followUs": "Follow Us"
   },
   "Home": {
     "innovating": "Innovating Across Industries",
@@ -220,5 +231,94 @@
     "title": "Something went wrong!",
     "description": "We apologize for the inconvenience. An unexpected error has occurred.",
     "retry": "Try again"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we collect, use, and protect your personal information.",
+    "lastUpdated": "Last Updated: February 2026",
+    "introduction": "At Doddapaneni Group, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
+    "informationWeCollect": "Information We Collect",
+    "informationWeCollectDesc": "We may collect information that you provide directly to us, including your name, email address, phone number, and any other information you choose to provide when contacting us or subscribing to our newsletter.",
+    "howWeUse": "How We Use Your Information",
+    "howWeUseDesc": "We use the information we collect to provide, maintain, and improve our services, respond to your inquiries, send you newsletters and updates, and comply with legal obligations.",
+    "dataProtection": "Data Protection",
+    "dataProtectionDesc": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+    "cookies": "Cookies",
+    "cookiesDesc": "Our website may use cookies to enhance your browsing experience. You can control cookie preferences through your browser settings.",
+    "thirdParty": "Third-Party Services",
+    "thirdPartyDesc": "We may use third-party services that collect, monitor, and analyze information to help us improve our website and services.",
+    "yourRights": "Your Rights",
+    "yourRightsDesc": "You have the right to access, update, or delete your personal information. To exercise these rights, please contact us using the information provided in our Contact page.",
+    "changes": "Changes to This Policy",
+    "changesDesc": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page."
+  },
+  "TermsConditions": {
+    "title": "Terms & Conditions",
+    "subtitle": "Website usage rules and terms of service.",
+    "lastUpdated": "Last Updated: February 2026",
+    "acceptance": "Acceptance of Terms",
+    "acceptanceDesc": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.",
+    "useLicense": "Use License",
+    "useLicenseDesc": "Permission is granted to temporarily download one copy of the materials on Doddapaneni Group's website for personal, non-commercial transitory viewing only.",
+    "restrictions": "Restrictions",
+    "restrictionsDesc": "You are specifically restricted from modifying or copying the materials, using the materials for any commercial purpose, or removing any copyright or other proprietary notations from the materials.",
+    "disclaimer": "Disclaimer",
+    "disclaimerDesc": "The materials on Doddapaneni Group's website are provided on an 'as is' basis. Doddapaneni Group makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties.",
+    "limitations": "Limitations",
+    "limitationsDesc": "In no event shall Doddapaneni Group or its suppliers be liable for any damages arising out of the use or inability to use the materials on this website.",
+    "revisions": "Revisions and Errata",
+    "revisionsDesc": "The materials appearing on Doddapaneni Group's website could include technical, typographical, or photographic errors. We do not warrant that any of the materials are accurate, complete, or current.",
+    "links": "Links",
+    "linksDesc": "Doddapaneni Group has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site."
+  },
+  "Disclaimer": {
+    "title": "Disclaimer",
+    "subtitle": "General legal safety and website disclaimer.",
+    "lastUpdated": "Last Updated: February 2026",
+    "general": "General Disclaimer",
+    "generalDesc": "The information on this website is provided on an 'as is' basis. To the fullest extent permitted by law, Doddapaneni Group excludes all representations, warranties, and conditions relating to our website and the use of this website.",
+    "noWarranty": "No Warranty",
+    "noWarrantyDesc": "Doddapaneni Group does not warrant that the website will be available at all times or that the information on the website is complete, accurate, or up-to-date.",
+    "limitation": "Limitation of Liability",
+    "limitationDesc": "Doddapaneni Group will not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of this website.",
+    "externalLinks": "External Links",
+    "externalLinksDesc": "Our website may contain links to external websites. We are not responsible for the content or privacy practices of these external sites.",
+    "businessDisclaimer": "Business Disclaimer",
+    "businessDisclaimerDesc": "While we strive to provide accurate information about our services and businesses, we make no representations or warranties regarding the accuracy, completeness, or suitability of the information for any particular purpose.",
+    "jurisdiction": "Jurisdiction",
+    "jurisdictionDesc": "This disclaimer is governed by and construed in accordance with applicable laws. Any disputes relating to this disclaimer will be subject to the exclusive jurisdiction of the courts."
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about Doddapaneni Group.",
+    "contactSupport": "Still have questions?",
+    "contactSupportDesc": "If you can't find the answer you're looking for, please contact our support team.",
+    "contactButton": "Contact Support",
+    "questions": {
+      "q1": {
+        "question": "What services does Doddapaneni Group offer?",
+        "answer": "Doddapaneni Group offers a wide range of services across multiple industries including IT & AI technologies, healthcare solutions, construction and real estate, import-export, manufacturing, logistics, education, media, and professional staffing services."
+      },
+      "q2": {
+        "question": "Where is Doddapaneni Group located?",
+        "answer": "We have offices in India (Plot No 22,23,41,42 & 43, Sri Krishna Avenue, Venkataramana Colony, Gokul Plots, Vasanth Nagar, Ranga Reddy District, 500085) and the USA (5052 SW 40th PL, Ocala, Florida, 34474)."
+      },
+      "q3": {
+        "question": "How can I contact Doddapaneni Group?",
+        "answer": "You can contact us via email at info@doddapanenigroup.net, by phone at +91 814 224 6666 (India) or +1 (352)230-8586 (USA), or by filling out the contact form on our website."
+      },
+      "q4": {
+        "question": "Does Doddapaneni Group operate internationally?",
+        "answer": "Yes, Doddapaneni Group operates across multiple continents with a diverse portfolio of successful ventures, providing global reach and international business solutions."
+      },
+      "q5": {
+        "question": "What are the group companies under Doddapaneni Group?",
+        "answer": "Our group includes companies like DealsMedi (medical products marketplace), Dlsin (multivendor e-commerce platform), and Janatha Mirror (digital media enterprise), among others."
+      },
+      "q6": {
+        "question": "How can I subscribe to your newsletter?",
+        "answer": "You can subscribe to our newsletter by entering your email address in the subscription form located in the footer of our website."
+      }
+    }
   }
 }

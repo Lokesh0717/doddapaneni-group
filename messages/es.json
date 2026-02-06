@@ -17,7 +17,18 @@
     "rights": "Todos los derechos reservados.",
     "phone": "Teléfono",
     "address": "Dirección",
-    "email": "Correo Electrónico"
+    "email": "Correo Electrónico",
+    "newsletter": "Boletín",
+    "emailPlaceholder": "Ingrese su correo electrónico",
+    "subscribe": "Suscribirse",
+    "subscribed": "¡Gracias por suscribirse!",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "termsConditions": "Términos y Condiciones",
+    "disclaimer": "Descargo de Responsabilidad",
+    "faq": "Preguntas Frecuentes / Soporte",
+    "sitemap": "Mapa del Sitio",
+    "followUs": "Síguenos"
   },
   "Home": {
     "innovating": "Innovando en Todas las Industrias",
@@ -244,5 +255,94 @@
     "title": "¡Algo salió mal!",
     "description": "Pedimos disculpas por las molestias. Ha ocurrido un error inesperado.",
     "retry": "Intentar de nuevo"
+  },
+  "PrivacyPolicy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Cómo recopilamos, usamos y protegemos su información personal.",
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "introduction": "En Doddapaneni Group, estamos comprometidos a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web.",
+    "informationWeCollect": "Información que Recopilamos",
+    "informationWeCollectDesc": "Podemos recopilar información que usted nos proporcione directamente, incluyendo su nombre, dirección de correo electrónico, número de teléfono y cualquier otra información que elija proporcionar al contactarnos o suscribirse a nuestro boletín.",
+    "howWeUse": "Cómo Usamos Su Información",
+    "howWeUseDesc": "Usamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, responder a sus consultas, enviarle boletines y actualizaciones, y cumplir con obligaciones legales.",
+    "dataProtection": "Protección de Datos",
+    "dataProtectionDesc": "Implementamos medidas técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción.",
+    "cookies": "Cookies",
+    "cookiesDesc": "Nuestro sitio web puede usar cookies para mejorar su experiencia de navegación. Puede controlar las preferencias de cookies a través de la configuración de su navegador.",
+    "thirdParty": "Servicios de Terceros",
+    "thirdPartyDesc": "Podemos usar servicios de terceros que recopilan, monitorean y analizan información para ayudarnos a mejorar nuestro sitio web y servicios.",
+    "yourRights": "Sus Derechos",
+    "yourRightsDesc": "Usted tiene derecho a acceder, actualizar o eliminar su información personal. Para ejercer estos derechos, contáctenos usando la información proporcionada en nuestra página de Contacto.",
+    "changes": "Cambios a Esta Política",
+    "changesDesc": "Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página."
+  },
+  "TermsConditions": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Reglas de uso del sitio web y términos de servicio.",
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "acceptance": "Aceptación de Términos",
+    "acceptanceDesc": "Al acceder y usar este sitio web, acepta y se compromete a cumplir con los términos y disposiciones de este acuerdo.",
+    "useLicense": "Licencia de Uso",
+    "useLicenseDesc": "Se otorga permiso para descargar temporalmente una copia de los materiales en el sitio web de Doddapaneni Group solo para visualización personal, no comercial y transitoria.",
+    "restrictions": "Restricciones",
+    "restrictionsDesc": "Está específicamente restringido de modificar o copiar los materiales, usar los materiales para cualquier propósito comercial, o eliminar cualquier notación de derechos de autor u otra propiedad de los materiales.",
+    "disclaimer": "Descargo de Responsabilidad",
+    "disclaimerDesc": "Los materiales en el sitio web de Doddapaneni Group se proporcionan 'tal cual'. Doddapaneni Group no otorga garantías, expresas o implícitas, y por la presente rechaza y niega todas las demás garantías.",
+    "limitations": "Limitaciones",
+    "limitationsDesc": "En ningún caso Doddapaneni Group o sus proveedores serán responsables de daños que surjan del uso o la incapacidad de usar los materiales en este sitio web.",
+    "revisions": "Revisiones y Erratas",
+    "revisionsDesc": "Los materiales que aparecen en el sitio web de Doddapaneni Group podrían incluir errores técnicos, tipográficos o fotográficos. No garantizamos que ninguno de los materiales sea preciso, completo o actual.",
+    "links": "Enlaces",
+    "linksDesc": "Doddapaneni Group no ha revisado todos los sitios vinculados a su sitio web y no es responsable del contenido de ningún sitio vinculado."
+  },
+  "Disclaimer": {
+    "title": "Descargo de Responsabilidad",
+    "subtitle": "Descargo de responsabilidad legal general y del sitio web.",
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "general": "Descargo de Responsabilidad General",
+    "generalDesc": "La información en este sitio web se proporciona 'tal cual'. En la medida máxima permitida por la ley, Doddapaneni Group excluye todas las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este sitio web.",
+    "noWarranty": "Sin Garantía",
+    "noWarrantyDesc": "Doddapaneni Group no garantiza que el sitio web esté disponible en todo momento o que la información en el sitio web sea completa, precisa o esté actualizada.",
+    "limitation": "Limitación de Responsabilidad",
+    "limitationDesc": "Doddapaneni Group no será responsable de ningún daño directo, indirecto, incidental, consecuente o punitivo que surja de su acceso o uso de este sitio web.",
+    "externalLinks": "Enlaces Externos",
+    "externalLinksDesc": "Nuestro sitio web puede contener enlaces a sitios web externos. No somos responsables del contenido o las prácticas de privacidad de estos sitios externos.",
+    "businessDisclaimer": "Descargo de Responsabilidad Comercial",
+    "businessDisclaimerDesc": "Aunque nos esforzamos por proporcionar información precisa sobre nuestros servicios y negocios, no hacemos representaciones ni garantías con respecto a la precisión, integridad o idoneidad de la información para cualquier propósito particular.",
+    "jurisdiction": "Jurisdicción",
+    "jurisdictionDesc": "Este descargo de responsabilidad se rige e interpreta de acuerdo con las leyes aplicables. Cualquier disputa relacionada con este descargo de responsabilidad estará sujeta a la jurisdicción exclusiva de los tribunales."
+  },
+  "FAQ": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Encuentre respuestas a preguntas comunes sobre Doddapaneni Group.",
+    "contactSupport": "¿Aún tiene preguntas?",
+    "contactSupportDesc": "Si no puede encontrar la respuesta que busca, comuníquese con nuestro equipo de soporte.",
+    "contactButton": "Contactar Soporte",
+    "questions": {
+      "q1": {
+        "question": "¿Qué servicios ofrece Doddapaneni Group?",
+        "answer": "Doddapaneni Group ofrece una amplia gama de servicios en múltiples industrias, incluyendo tecnologías de TI e IA, soluciones de atención médica, construcción e inmobiliaria, importación-exportación, manufactura, logística, educación, medios y servicios profesionales de personal."
+      },
+      "q2": {
+        "question": "¿Dónde está ubicado Doddapaneni Group?",
+        "answer": "Tenemos oficinas en India (Plot No 22,23,41,42 & 43, Sri Krishna Avenue, Venkataramana Colony, Gokul Plots, Vasanth Nagar, Ranga Reddy District, 500085) y EE. UU. (5052 SW 40th PL, Ocala, Florida, 34474)."
+      },
+      "q3": {
+        "question": "¿Cómo puedo contactar a Doddapaneni Group?",
+        "answer": "Puede contactarnos por correo electrónico a info@doddapanenigroup.net, por teléfono al +91 814 224 6666 (India) o +1 (352)230-8586 (EE. UU.), o completando el formulario de contacto en nuestro sitio web."
+      },
+      "q4": {
+        "question": "¿Doddapaneni Group opera internacionalmente?",
+        "answer": "Sí, Doddapaneni Group opera en múltiples continentes con un portafolio diverso de empresas exitosas, proporcionando alcance global y soluciones comerciales internacionales."
+      },
+      "q5": {
+        "question": "¿Cuáles son las empresas del grupo bajo Doddapaneni Group?",
+        "answer": "Nuestro grupo incluye empresas como DealsMedi (mercado de productos médicos), Dlsin (plataforma de comercio electrónico multivendedor) y Janatha Mirror (empresa de medios digitales), entre otras."
+      },
+      "q6": {
+        "question": "¿Cómo puedo suscribirme a su boletín?",
+        "answer": "Puede suscribirse a nuestro boletín ingresando su dirección de correo electrónico en el formulario de suscripción ubicado en el pie de página de nuestro sitio web."
+      }
+    }
   }
 }

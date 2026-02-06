@@ -70,51 +70,49 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-4 inset-x-4 max-w-7xl mx-auto z-50 transition-all duration-300 rounded-2xl ${navbarClasses}`}>
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
+    <nav className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${navbarClasses}`}>
+      <div className="flex justify-between h-16">
+        <div className="flex items-center">
+          <Link 
+            href="/" 
+            locale={useLocale()} 
+            className="flex-shrink-0 flex items-center gap-2 group"
+            onClick={handleLogoClick}
+          >
+            <Image
+              src="/logo.png"
+              alt={companyName}
+              width={200}
+              height={80}
+              className="h-16 w-auto object-contain"
+              priority
+            />
+          </Link>
+        </div>
+        <div className="hidden md:flex items-center space-x-8 pr-4 sm:pr-6 lg:pr-8">
+          {navLinks.filter(link => link.href !== pathname).map((link) => (
             <Link 
-              href="/" 
-              locale={useLocale()} 
-              className="flex-shrink-0 flex items-center gap-2 group"
-              onClick={handleLogoClick}
+              key={link.href} 
+              href={link.href} 
+              className={`px-4 py-2 rounded-2xl text-sm font-medium transition-all duration-300 hover:backdrop-blur-md hover:scale-105 border border-transparent ${
+                isTransparent 
+                  ? 'text-white hover:bg-white/20 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] hover:border-white/30' 
+                  : 'text-blue-900 hover:bg-blue-100 hover:shadow-[0_8px_32px_0_rgba(30,58,138,0.1)] hover:border-blue-200/50'
+              }`}
             >
-              <Image
-                src="/logo.png"
-                alt={companyName}
-                width={200}
-                height={80}
-                className="h-16 w-auto object-contain"
-                priority
-              />
+              {link.label}
             </Link>
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.filter(link => link.href !== pathname).map((link) => (
-              <Link 
-                key={link.href} 
-                href={link.href} 
-                className={`px-4 py-2 rounded-2xl text-sm font-medium transition-all duration-300 hover:backdrop-blur-md hover:scale-105 border border-transparent ${
-                  isTransparent 
-                    ? 'text-white hover:bg-white/20 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] hover:border-white/30' 
-                    : 'text-blue-900 hover:bg-blue-100 hover:shadow-[0_8px_32px_0_rgba(30,58,138,0.1)] hover:border-blue-200/50'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <LanguageSwitcher isTransparent={isTransparent} />
-          </div>
-          <div className="-mr-2 flex md:hidden items-center gap-4">
-             <LanguageSwitcher isTransparent={isTransparent} />
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors ${mobileButtonClass}`}
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          ))}
+          <LanguageSwitcher isTransparent={isTransparent} />
+        </div>
+        <div className="-mr-2 flex md:hidden items-center gap-4 pr-4">
+           <LanguageSwitcher isTransparent={isTransparent} />
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors ${mobileButtonClass}`}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
 
