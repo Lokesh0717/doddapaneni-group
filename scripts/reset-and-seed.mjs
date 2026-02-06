@@ -1,12 +1,9 @@
 /**
  * Reset MongoDB: delete all data from all collections, then create one Super Admin user.
- * Run: node scripts/reset-and-seed.mjs
+ * Run: node scripts/reset-and-seed.mjs   OR   npm run db:reset
  *
- * Requires in .env.local (or .env):
- *   SUPER_ADMIN_EMAIL    - Super Admin login email
- *   SUPER_ADMIN_PASSWORD - Super Admin login password (min 6 chars)
- *   SUPER_ADMIN_NAME     - Display name for the Super Admin
- *
+ * Default Super Admin: lk8772000@gmail.com / 123456
+ * Override in .env.local: SUPER_ADMIN_EMAIL, SUPER_ADMIN_PASSWORD, SUPER_ADMIN_NAME
  * Also uses DATABASE_URL or MONGODB_URI for the database connection.
  */
 
@@ -26,17 +23,17 @@ const MONGODB_URI =
   process.env.MONGODB_URI ??
   'mongodb://127.0.0.1:27017/doddapaneni_group';
 
-const SUPER_ADMIN_EMAIL = process.env.SUPER_ADMIN_EMAIL?.trim();
-const SUPER_ADMIN_PASSWORD = process.env.SUPER_ADMIN_PASSWORD;
-const SUPER_ADMIN_NAME = process.env.SUPER_ADMIN_NAME?.trim() ?? null;
+const SUPER_ADMIN_EMAIL = (process.env.SUPER_ADMIN_EMAIL ?? 'lk8772000@gmail.com').trim().toLowerCase();
+const SUPER_ADMIN_PASSWORD = process.env.SUPER_ADMIN_PASSWORD ?? '123456';
+const SUPER_ADMIN_NAME = process.env.SUPER_ADMIN_NAME?.trim() ?? 'Super Admin';
 const SUPER_ADMIN_ROLE = 'SUPER_ADMIN';
 
 if (!SUPER_ADMIN_EMAIL) {
   console.error('Missing SUPER_ADMIN_EMAIL. Set it in .env.local (e.g. SUPER_ADMIN_EMAIL=you@example.com)');
   process.exit(1);
 }
-if (!SUPER_ADMIN_PASSWORD || String(SUPER_ADMIN_PASSWORD).length < 6) {
-  console.error('Missing or invalid SUPER_ADMIN_PASSWORD (min 6 characters). Set it in .env.local.');
+if (String(SUPER_ADMIN_PASSWORD).length < 6) {
+  console.error('Invalid SUPER_ADMIN_PASSWORD (min 6 characters). Set it in .env.local.');
   process.exit(1);
 }
 
@@ -100,11 +97,10 @@ async function main() {
 
   const createdAt = new Date();
   const passwordHash = await bcrypt.hash(String(SUPER_ADMIN_PASSWORD), 10);
-  const emailLower = SUPER_ADMIN_EMAIL.toLowerCase().trim();
 
-  console.log('Creating Super Admin user:', maskEmail(emailLower));
+  console.log('Creating Super Admin user:', maskEmail(SUPER_ADMIN_EMAIL));
   await User.create({
-    email: emailLower,
+    email: SUPER_ADMIN_EMAIL,
     passwordHash,
     name: SUPER_ADMIN_NAME,
     role: SUPER_ADMIN_ROLE,

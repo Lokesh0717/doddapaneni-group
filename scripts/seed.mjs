@@ -1,11 +1,12 @@
 /**
  * Seed one user per role if not present (4 distinct emails).
- * Run: node scripts/seed.mjs
+ * Run: node scripts/seed.mjs   OR   npm run db:seed
  * Requires: DATABASE_URL or MONGODB_URI
  * Does not delete existing users; only adds missing ones.
  *
- * Each role uses a different email (emails must be unique across all roles):
- *   Super Admin, Admin, Developer, Digital Marketer.
+ * Super Admin (default): lk8772000@gmail.com / 123456
+ * Override with SUPER_ADMIN_EMAIL, SUPER_ADMIN_PASSWORD env vars.
+ * Other roles: Admin, Developer, Digital Marketer (see SEED_USERS below).
  */
 
 import { config } from 'dotenv';
@@ -37,12 +38,14 @@ const userSchema = new mongoose.Schema(
 const User = mongoose.models.User ?? mongoose.model('User', userSchema);
 
 const DEFAULT_PASSWORD = process.env.SEED_PASSWORD ?? '123';
+const SUPER_ADMIN_EMAIL = process.env.SUPER_ADMIN_EMAIL ?? 'lk8772000@gmail.com';
+const SUPER_ADMIN_PASSWORD = process.env.SUPER_ADMIN_PASSWORD ?? '123456';
 
 const SEED_USERS = [
-  { email: process.env.SUPER_ADMIN_EMAIL ?? 'superadmin@doddapaneni-group.com', name: 'Super Admin', role: 'SUPER_ADMIN' },
-  { email: process.env.ADMIN_EMAIL ?? 'admin@doddapaneni-group.com', name: 'Admin', role: 'ADMIN' },
-  { email: process.env.DEVELOPER_EMAIL ?? 'developer@doddapaneni-group.com', name: 'Developer', role: 'DEVELOPER' },
-  { email: process.env.MARKETER_EMAIL ?? 'marketer@doddapaneni-group.com', name: 'Digital Marketer', role: 'DIGITAL_MARKETER' },
+  { email: SUPER_ADMIN_EMAIL, name: 'Super Admin', role: 'SUPER_ADMIN', password: SUPER_ADMIN_PASSWORD },
+  { email: process.env.ADMIN_EMAIL ?? 'admin@doddapaneni-group.com', name: 'Admin', role: 'ADMIN', password: DEFAULT_PASSWORD },
+  { email: process.env.DEVELOPER_EMAIL ?? 'developer@doddapaneni-group.com', name: 'Developer', role: 'DEVELOPER', password: DEFAULT_PASSWORD },
+  { email: process.env.MARKETER_EMAIL ?? 'marketer@doddapaneni-group.com', name: 'Digital Marketer', role: 'DIGITAL_MARKETER', password: DEFAULT_PASSWORD },
 ];
 
 async function main() {
@@ -53,7 +56,7 @@ async function main() {
     if (!existing) {
       await User.create({
         email: u.email,
-        passwordHash: await bcrypt.hash(DEFAULT_PASSWORD, 10),
+        passwordHash: await bcrypt.hash(u.password, 10),
         name: u.name,
         role: u.role,
       });

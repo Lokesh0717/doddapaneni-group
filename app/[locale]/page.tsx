@@ -7,8 +7,9 @@ import { motion } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import ContentPage from '@/components/ContentPage';
 
-// Use absolute path so next/image never receives a relative URL
-const HOME_IMAGE = '/home.jpg';
+// Banner only – use absolute path so next/image never receives a relative URL
+const BANNER_IMAGE = '/image.jpg';
+const SECTION_IMAGE = '/home.jpg';
 
 export default function Home() {
   const locale = useLocale();
@@ -93,7 +94,7 @@ export default function Home() {
       <section className="relative bg-slate-900 text-white pt-20 pb-8 md:pt-24 md:pb-12 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 z-0">
           <Image
-            src={HOME_IMAGE}
+            src={BANNER_IMAGE}
             alt="Corporate Architecture"
             fill
             className="object-cover opacity-50"
@@ -196,7 +197,7 @@ export default function Home() {
                className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1"
              >
                 <Image 
-                  src={HOME_IMAGE}
+                  src={SECTION_IMAGE}
                   alt="Team collaboration"
                   fill
                   className="object-cover"

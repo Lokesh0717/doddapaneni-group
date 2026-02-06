@@ -6,21 +6,30 @@ The app uses **MongoDB** (suggested database name: `doddapaneni_group`). Set `DA
 
 ## Reset database and start from scratch
 
-Run this once to clear all users and login logs, and create one user per role (4 distinct emails):
+Run this once to clear all data and create one Super Admin user (default: lk8772000@gmail.com / 123456):
 
 ```bash
 npm run db:reset
 ```
 
+To get one user per role (Super Admin + Admin + Developer + Digital Marketer) without wiping the DB, run:
+
+```bash
+npm run db:seed
+```
+
 ## Test logins (stored in database)
 
-After running `npm run db:reset`, you have 4 users—one per role, each with a **different email**:
+**Super Admin (default):** `lk8772000@gmail.com` / `123456`  
+Create this user by running **`npm run db:seed`** (adds if missing) or **`npm run db:reset`** (wipes DB and creates only this Super Admin).
+
+After running **`npm run db:seed`** (without reset), you get 4 users—one per role:
 
 | Role             | Email                            | Password |
 |------------------|----------------------------------|----------|
-| **Super Admin**  | `superadmin@doddapaneni-group.com` | `123`    |
-| **Admin**        | `admin@doddapaneni-group.com`      | `123`    |
-| **Developer**    | `developer@doddapaneni-group.com`  | `123`    |
+| **Super Admin**  | `lk8772000@gmail.com`            | `123456` |
+| **Admin**        | `admin@doddapaneni-group.com`    | `123`    |
+| **Developer**    | `developer@doddapaneni-group.com`| `123`    |
 | **Digital Marketer** | `marketer@doddapaneni-group.com` | `123`    |
 
 1. Open **http://localhost:3000/en/login** (or your locale, e.g. `/te/login`).
@@ -75,7 +84,7 @@ After logging in as **Developer**, open the Developer dashboard. You change the 
 
 ## If login still fails
 
-1. Run `npm run db:reset` again to get the 4 default users (each with a different email, password `123`).
+1. Run `npm run db:seed` to ensure the Super Admin (lk8772000@gmail.com / 123456) and other role users exist, or `npm run db:reset` to wipe and create only the Super Admin.
 2. Use the table above to sign in as the role you need.
 3. When creating new users, always use an **email that is not already used** by any other user.
 4. Sign out and log in with that new email and password.
