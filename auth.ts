@@ -27,6 +27,11 @@ declare module 'next-auth/jwt' {
   }
 }
 
+// Validate required env vars at startup
+if (!process.env.AUTH_SECRET) {
+  throw new Error('AUTH_SECRET environment variable is required');
+}
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Credentials({

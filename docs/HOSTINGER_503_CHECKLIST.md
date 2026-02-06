@@ -23,9 +23,14 @@
 
 ## 4. Environment variables (must be set in Hostinger)
 
-- **DATABASE_URL** = full Atlas URI: `mongodb+srv://lokeshreddykusam_db_user:iybUfjhzTE4vmqou@doddapanenigroup.veteuqk.mongodb.net/doddapaneni_group?retryWrites=true&w=majority&appName=doddapanenigroup`
-- **AUTH_SECRET** = `3VihJiE6wlWfl5O7Ri2YkXGeqm/haJ1e/A/6selABTk=` (lowercase `l` in `Wfl5`)
-- **NEXTAUTH_URL** = `https://lightblue-mule-433546.hostingersite.com` (preview URL until your domain works)
+⚠️ **Critical formatting rules:**
+- **No quotes** around values (Hostinger may read quotes as part of the value)
+- **No trailing slashes** in URLs
+- **Exact match** — copy these values exactly
+
+- **DATABASE_URL** = `mongodb+srv://lokeshreddykusam_db_user:iybUfjhzTE4vmqou@doddapanenigroup.veteuqk.mongodb.net/doddapaneni_group?retryWrites=true&w=majority&appName=doddapanenigroup`
+- **AUTH_SECRET** = `3VihJiE6wlWfl5O7Ri2YkXGeqm/haJ1e/A/6selABTk=` (lowercase `l` in `Wfl5`, no quotes)
+- **NEXTAUTH_URL** = `https://lightblue-mule-433546.hostingersite.com` (no trailing slash, no quotes)
 
 ## 5. After changing anything
 
@@ -37,3 +42,21 @@ Click **Save and redeploy**, wait for the deployment to finish, then try the pre
 - **Test `/api/health`** – After redeploy, open `https://your-preview-url.hostingersite.com/api/health`. If you see `{"status":"ok"}`, the app is running and the 503 may be only on the homepage (routing). If `/api/health` also returns 503, the Node process is not staying up.
 - **MongoDB Atlas** – In Atlas → your cluster → **Network Access**, ensure **0.0.0.0/0** (allow from anywhere) is there so Hostinger’s IPs can connect. Without it, the app can crash when the first request hits a page that uses the DB.
 - **Ask Hostinger for runtime logs** – Request “application” or “runtime” logs (not just build logs) for your Node.js app. A crash message there (e.g. MongoDB timeout, ECONNREFUSED, out of memory) will tell us the exact fix.
+
+## 7. Getting 500 errors (app is running but APIs fail)
+
+If you see 500 errors on `/api/auth/session`, `/api/visit`, `/api/content/*`, etc.:
+
+- **Check env var formatting in Hostinger:**
+  - `AUTH_SECRET` must be **exactly** `3VihJiE6wlWfl5O7Ri2YkXGeqm/haJ1e/A/6selABTk=` (no quotes, no spaces)
+  - `NEXTAUTH_URL` must be **exactly** `https://lightblue-mule-433546.hostingersite.com` (no trailing slash `/`, no quotes)
+  - `DATABASE_URL` should match the MongoDB Atlas URI exactly (no quotes)
+
+- **MongoDB Atlas Network Access:**
+  - Go to Atlas → your cluster → **Network Access**
+  - Ensure there is an entry for **0.0.0.0/0** (allow from anywhere) so Hostinger’s servers can connect
+  - If missing, click **Add IP Address** → **Allow Access from Anywhere** → **Confirm**
+
+- **After fixing env vars:** Click **Save and redeploy** in Hostinger. The app will restart with the corrected values.
+
+- **If still 500:** Check Hostinger’s **application/runtime logs** for specific error messages (e.g. “AUTH_SECRET is required”, MongoDB connection errors, etc.).
